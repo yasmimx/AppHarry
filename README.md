@@ -1,7 +1,7 @@
 # AppHarry
 
 Integrantes: Maria Eduarda Cavalcante e Yasmim Borges Dias. 
-Tema: HArry Potter. 
+Tema: Harry Potter. 
 Orientadora: Aline Firmino. 
 
 
