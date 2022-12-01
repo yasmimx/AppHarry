@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppHarryPOtter</string>
+    <string name="login">LOGIN</string>
+    <string name="emaill">EMAIL</string>
+    <string name="senha">SENHA</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="cadastro">Ainda não possui uma conta?</string>
+    <string name="palpite">PALPITE</string>
+    <string name="salvar">SALVAR</string>
+    <string name="jatem">Já possui uma conta?</string>
+    <string name="revelar">REVELAR</string>
+    <string name="cadastre">CRIE SUA CONTA</string>
+    <string name="nome">NOME</string>
+    <string name="jacad">Já tem cadastro? Faça login.</string>
+    <string name="usuario">USUÁRIO</string>
+    <string name="confsenha">CONFIRME SUA SENHA</string>
+    <string name="deslogar">DESLOGAR</string>
+    <string name="deslogdesc">Para deslogar, confirme seu usuário e senha.</string>
+    <string name="save">SALVAR</string>
+    <string name="entrar">ENTRAR</string>
+</resources>
