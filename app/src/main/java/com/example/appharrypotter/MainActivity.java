@@ -4,6 +4,7 @@ import static com.example.appharrypotter.ClassLocation.latitude;
 import static com.example.appharrypotter.ClassLocation.longitude;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE );
 
 
-
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
@@ -57,8 +57,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCorvinal(View view){
-        Intent intent = new Intent(this, home.class);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        editor = sharedPreferences.edit();
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+
+    }
+
+    public void openGrifinoria(View view){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        editor = sharedPreferences.edit();
+
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
+    public void openSonserina(View view){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        editor = sharedPreferences.edit();
+
+        Intent intent = new Intent(this, Home2.class);
+        startActivity(intent);
+    }
+
+    public void openLufa(View view){
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        editor = sharedPreferences.edit();
+
+        Intent intent = new Intent(this, Home2.class);
+        startActivity(intent);
+    }
 }

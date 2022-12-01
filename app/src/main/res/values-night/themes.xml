@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AppHarryPOtter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.AppHarryPotter." parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,26 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+    </style>
+
+    <!-- Dark Mode Grifinoria e lufa-->
+    <!-- Tela se o Dark Mode estiver ligado -->
+    <style name="TELA">
+        <item name="android:background">#FF6347</item>
+    </style>
+    <style name="TELA2">
+        <item name="android:background">#F0E68C</item>
+    </style>
+
+    <!-- Textos se o Dark Mode estiver ligado -->
+    <style name="TEXTO">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!--Botões se o Dark Mode estiver ligado -->
+    <style name="BOTAO">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">#232323</item>
     </style>
 </resources>

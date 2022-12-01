@@ -10,33 +10,49 @@
         android:id="@+id/corvinalbtn"
         android:layout_width="108dp"
         android:layout_height="133dp"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="49dp" />
+        android:layout_marginTop="175dp"
+        android:onClick="openCorvinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao" />
 
     <ImageButton
         android:id="@+id/grifibtn"
         android:layout_width="108dp"
         android:layout_height="133dp"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="563dp" />
+        android:layout_marginTop="189dp"
+        android:onClick="openGrifinoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonsebtn"
+        app:srcCompat="@drawable/botao" />
 
     <ImageButton
         android:id="@+id/sonsebtn"
         android:layout_width="108dp"
         android:layout_height="133dp"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="403dp" />
+        android:layout_marginTop="175dp"
+        android:onClick="openSonserina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/botao" />
 
     <ImageButton
         android:id="@+id/lufabtn"
         android:layout_width="108dp"
         android:layout_height="133dp"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="229dp" />
+        android:layout_marginTop="189dp"
+        android:onClick="openLufa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corvinalbtn"
+        app:srcCompat="@drawable/botao" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
