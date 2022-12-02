@@ -23,10 +23,11 @@ public class Home extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btnTeste = findViewById(R.id.btnTeste);
+
     }
 
     public void openTeste(View view) {
-        Intent intent = new Intent(this, Test.class);
+        Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);
     }
 }

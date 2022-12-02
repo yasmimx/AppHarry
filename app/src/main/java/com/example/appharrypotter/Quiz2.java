@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 
-public class Test extends AppCompatActivity {
+public class Quiz2 extends AppCompatActivity {
 
     RadioButton yes1, yes2, yes3, no1, no2, no3;
     Button find;
@@ -17,10 +18,10 @@ public class Test extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teste);
+        setContentView(R.layout.activity_quiz2);
 
-        // Esconde barra superior
-        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // Elementos pelo ID
         yes1 = findViewById(R.id.btnYes1);
@@ -30,6 +31,7 @@ public class Test extends AppCompatActivity {
         no2 = findViewById(R.id.btnNo2);
         no3 = findViewById(R.id.btnNo3);
         find = findViewById(R.id.btnFind);
+
     }
 
     // Botão Descubra

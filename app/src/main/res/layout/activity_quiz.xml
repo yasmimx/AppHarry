@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TELA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <RadioGroup
+        android:id="@+id/rdgrp1"
+        android:layout_width="113dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPergunta1">
+
+        <RadioButton
+            android:id="@+id/btnYes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes1" />
+
+        <RadioButton
+            android:id="@+id/btnNo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no1" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdgrp2"
+        android:layout_width="135dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPergunta2">
+
+        <RadioButton
+            android:id="@+id/btnYes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes2" />
+
+        <RadioButton
+            android:id="@+id/btnNo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no2" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdgrp3"
+        android:layout_width="96dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPergunta3">
+
+        <RadioButton
+            android:id="@+id/btnYes3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes3" />
+
+        <RadioButton
+            android:id="@+id/btnNo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFind"
+        style="@style/BOTAO"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="35dp"
+        android:onClick="answerQuiz"
+        android:text="@string/btnTeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp3" />
+
+    <TextView
+        android:id="@+id/txtPergunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Pergunta3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloTeste" />
+
+    <TextView
+        android:id="@+id/txtPergunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/Pergunta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp1" />
+
+    <TextView
+        android:id="@+id/txtPergunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/Pergunta3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp2" />
+
+    <TextView
+        android:id="@+id/txtTituloTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/TituloTeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

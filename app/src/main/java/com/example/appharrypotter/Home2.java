@@ -22,6 +22,9 @@ public class Home2 extends AppCompatActivity {
 
         btnTeste = findViewById(R.id.btnTeste);
     }
-
+    public void openTeste(View view) {
+        Intent intent = new Intent(this, Quiz2.class);
+        startActivity(intent);
+    }
 
 }
