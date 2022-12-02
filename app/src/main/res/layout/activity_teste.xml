@@ -5,7 +5,7 @@
     style="@style/TELA"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Teste">
+    tools:context=".Test">
 
     <RadioGroup
         android:id="@+id/rdgrp1"
@@ -31,8 +31,8 @@
 
     <RadioGroup
         android:id="@+id/rdgrp2"
-        android:layout_width="176dp"
-        android:layout_height="90dp"
+        android:layout_width="135dp"
+        android:layout_height="88dp"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,14 +75,14 @@
 
     <Button
         android:id="@+id/btnFind"
+        style="@style/BOTAO"
         android:layout_width="144dp"
         android:layout_height="56dp"
         android:layout_marginTop="35dp"
         android:text="@string/btnTeste"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgrp3"
-        app:srcCompat="@drawable/botao" />
+        app:layout_constraintTop_toBottomOf="@+id/rdgrp3" />
 
     <TextView
         android:id="@+id/txtPergunta1"

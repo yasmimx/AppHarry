@@ -7,10 +7,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RadioButton;
 
-public class Teste extends AppCompatActivity {
+public class Test extends AppCompatActivity {
 
     RadioButton yes1, yes2, yes3, no1, no2, no3;
     Button find;
@@ -19,7 +18,6 @@ public class Teste extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teste);
-        setContentView(R.layout.activity_teste2);
 
         // Esconde barra superior
         getSupportActionBar().hide();
