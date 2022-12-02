@@ -19,4 +19,20 @@
     <string name="save">SALVAR</string>
     <string name="entrar">ENTRAR</string>
     <string name="casa">ESCOLHA SUA CASA</string>
+
+    <!-- Activity / Teste patrono -->
+    <string name="no1">Extrovertida</string>
+    <string name="yes1">Introvertida</string>
+    <string name="no2">Transfiguração</string>
+    <string name="yes2">Astronomia</string>
+    <string name="no3">Gato</string>
+    <string name="yes3">Cachorro</string>
+    <string name="btnTeste">Descubra</string>
+    <string name="chNavegador" />
+    <string name="TituloTeste">Descubra seu Patrono</string>
+    <string name="Pergunta1">Você é uma pessoa:</string>
+    <string name="Pergunta2">Qual matéria você estudaria em Hogwarts?</string>
+    <string name="Pergunta3">Qual seu animal preferido?</string>
+
+
 </resources>
