@@ -1,25 +1,27 @@
 package com.example.appharrypotter;
 
-import static com.example.appharrypotter.ClassLocation.latitude;
-import static com.example.appharrypotter.ClassLocation.longitude;
+import android.Manifest;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    FusedLocationProviderClient fusedLocationClient;
 
     ImageButton btn1;
     ImageButton btn2;
@@ -39,24 +41,41 @@ public class MainActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.sonsebtn);
         btn4 = findViewById(R.id.lufabtn);
 
-        sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE );
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
+        getLocation();
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_NETWORK_STATE}, 1);
-        }
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        LocationListener locationListener = new ClassLocation();
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            double latitude = ClassLocation.latitude;
-            double longitude = ClassLocation.longitude;
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 10) {
+            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                getLocation();
+            } else {
+                {
+                    Toast.makeText(MainActivity.this, "Permissão de localização negada.", Toast.LENGTH_SHORT).show();
+                }
+            }
         }
     }
 
-    public void openCorvinal(View view){
+    public void getLocation() {
+        if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        } else {
+            requestPermission();
+        }
+    }
+
+    private void requestPermission() {
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 10);
+    }
+
+    public void openCorvinal(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         editor = sharedPreferences.edit();
         Intent intent = new Intent(this, Home.class);
@@ -64,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openGrifinoria(View view){
+    public void openGrifinoria(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         editor = sharedPreferences.edit();
 
@@ -72,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openSonserina(View view){
+    public void openSonserina(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         editor = sharedPreferences.edit();
 
@@ -80,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openLufa(View view){
+    public void openLufa(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         editor = sharedPreferences.edit();
 

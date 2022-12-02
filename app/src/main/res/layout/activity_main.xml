@@ -6,53 +6,138 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/corvinalbtn"
-        android:layout_width="108dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="175dp"
-        android:onClick="openCorvinal"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="491dp"
+        android:layout_height="524dp"
+        android:layout_marginTop="-485dp"
+        android:layout_marginBottom="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/botao" />
+        app:layout_constraintVertical_bias="0.398"
+        app:srcCompat="@drawable/cimasplashnovo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="549dp"
+        android:layout_height="770dp"
+        android:layout_marginBottom="-455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baixosplashnovo" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/casa"
+        android:textColor="#353030"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/corvinalbtn"
+        android:layout_width="220dp"
+        android:layout_height="313dp"
+        android:background="@null"
+        android:onClick="openCorvinal"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286"
+        app:srcCompat="@drawable/corvinalmain" />
 
     <ImageButton
         android:id="@+id/grifibtn"
-        android:layout_width="108dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="189dp"
+        android:layout_width="208dp"
+        android:layout_height="310dp"
+        android:background="@null"
         android:onClick="openGrifinoria"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sonsebtn"
-        app:srcCompat="@drawable/botao" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765"
+        app:srcCompat="@drawable/grifinoriamain" />
 
     <ImageButton
         android:id="@+id/sonsebtn"
-        android:layout_width="108dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="175dp"
+        android:layout_width="203dp"
+        android:layout_height="316dp"
+        android:background="@null"
         android:onClick="openSonserina"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/botao" />
+        app:layout_constraintVertical_bias="0.284"
+        app:srcCompat="@drawable/sonserinamain" />
 
     <ImageButton
         android:id="@+id/lufabtn"
-        android:layout_width="108dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="189dp"
+        android:layout_width="212dp"
+        android:layout_height="309dp"
+        android:background="@null"
         android:onClick="openLufa"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/corvinalbtn"
-        app:srcCompat="@drawable/botao" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765"
+        app:srcCompat="@drawable/lufalufamain" />
+
+    <ImageButton
+
+        android:id="@+id/imageButton"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:background="@null"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/chapeuseletormain"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="177dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/severuscasas" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
