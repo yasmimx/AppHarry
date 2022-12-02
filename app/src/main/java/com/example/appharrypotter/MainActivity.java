@@ -1,6 +1,11 @@
 package com.example.appharrypotter;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.app.ActivityCompat;
+
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -41,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btn3 = findViewById(R.id.sonsebtn);
         btn4 = findViewById(R.id.lufabtn);
 
+        sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE );
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
         getLocation();
@@ -78,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
     public void openCorvinal(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         editor = sharedPreferences.edit();
+
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
 
