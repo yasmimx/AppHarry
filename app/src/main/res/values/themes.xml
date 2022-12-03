@@ -18,7 +18,7 @@
     <!-- Light Mode / corvinal e sonserina -->
     <!-- Tela se o Light Mode estiver ligado -->
     <style name="TELA">
-        <item name="android:background">#6495ED</item>
+        <item name="android:background">#FFFFFF</item>
     </style>
     <style name="TELA2">
         <item name="android:background">#98FB98</item>

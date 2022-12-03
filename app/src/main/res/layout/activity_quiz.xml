@@ -7,10 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".Quiz">
 
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="370dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        android:background=""
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="537dp"
+        android:layout_height="835dp"
+        android:layout_marginTop="-380dp"
+        android:layout_marginBottom="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398"
+        app:srcCompat="@drawable/cimasplashnovo" />
+
     <RadioGroup
         android:id="@+id/rdgrp1"
-        android:layout_width="113dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,14 +46,24 @@
 
         <RadioButton
             android:id="@+id/btnYes1"
-            android:layout_width="match_parent"
+            android:layout_width="149dp"
             android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+            android:padding="16dp"
             android:text="@string/yes1" />
 
         <RadioButton
             android:id="@+id/btnNo1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:padding="16dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
             android:text="@string/no1" />
     </RadioGroup>
 
@@ -42,12 +80,20 @@
             android:id="@+id/btnYes2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
             android:text="@string/yes2" />
 
         <RadioButton
             android:id="@+id/btnNo2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
             android:text="@string/no2" />
     </RadioGroup>
 
@@ -63,12 +109,20 @@
         <RadioButton
             android:id="@+id/btnYes3"
             android:layout_width="match_parent"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
             android:layout_height="wrap_content"
             android:text="@string/yes3" />
 
         <RadioButton
             android:id="@+id/btnNo3"
             android:layout_width="match_parent"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
             android:layout_height="wrap_content"
             android:text="@string/no3" />
     </RadioGroup>
@@ -125,5 +179,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
