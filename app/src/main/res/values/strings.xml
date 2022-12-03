@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppHarryPOtter</string>
+    <string name="app_name">Harry Potter</string>
     <string name="login">LOGIN</string>
     <string name="emaill">EMAIL</string>
     <string name="senha">SENHA</string>
@@ -34,5 +34,7 @@
     <string name="Pergunta2">Qual matéria você estudaria em Hogwarts?</string>
     <string name="Pergunta3">Qual seu animal preferido?</string>
 
+    <!-- Activity / Wallpaper -->
+    <string name="btnWall">Definir como Wallpaper</string>
 
 </resources>
