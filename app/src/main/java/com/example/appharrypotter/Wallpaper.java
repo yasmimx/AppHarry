@@ -30,7 +30,7 @@ public class Wallpaper extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    wallpaperManager.setResource(R.drawable.wall1);
+                    wallpaperManager.setResource(R.drawable.sonserinamain);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -43,7 +43,7 @@ public class Wallpaper extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    wallpaperManager.setResource(R.drawable.wall2);
+                    wallpaperManager.setResource(R.drawable.corvinalmain);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -56,7 +56,7 @@ public class Wallpaper extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    wallpaperManager.setResource(R.drawable.wall3);
+                    wallpaperManager.setResource(R.drawable.grifinoriamain);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

@@ -19,6 +19,17 @@
     <string name="save">SALVAR</string>
     <string name="entrar">ENTRAR</string>
     <string name="casa">ESCOLHA SUA CASA</string>
+    <string name="bemvindo">BEM-VINDO</string>
+    <string name="heminone">HERMIONE</string>
+    <string name="snape">SNAPE</string>
+    <string name="harry">HARRY</string>
+    <string name="fre">FRED E GEORG</string>
+    <string name="minerva">MINERVA</string>
+    <string name="sirius">SIRIUS</string>
+    <string name="yt">VEJA OS TRAILERS</string>
+    <string name="elenco">CONHEÇA O ELENCO</string>
+    <string name="contato">ENTRE EM CONTATO</string>
+
 
     <!-- Activity / Teste patrono -->
     <string name="no1">Extrovertida</string>

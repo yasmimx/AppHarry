@@ -8,19 +8,6 @@
     tools:context=".Quiz">
 
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="370dp"
-        android:layout_height="210dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072"
-        android:background=""
-        tools:ignore="MissingConstraints" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="537dp"
@@ -35,71 +22,84 @@
         app:layout_constraintVertical_bias="0.398"
         app:srcCompat="@drawable/cimasplashnovo" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="590dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        app:srcCompat="@drawable/painel" />
+
     <RadioGroup
         android:id="@+id/rdgrp1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="148dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="28dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPergunta1">
 
         <RadioButton
+            android:id="@+id/btnNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/no1" />
+
+        <RadioButton
             android:id="@+id/btnYes1"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:background="@drawable/radio_selector"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:button="@android:color/transparent"
             android:checked="true"
             android:color="@color/black"
             android:elevation="4dp"
             android:padding="16dp"
             android:text="@string/yes1"
-            android:textColor="@drawable/text_color" />
-
-        <RadioButton
-            android:id="@+id/btnNo1"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:background="@drawable/radio_selector"
-            android:button="@android:color/transparent"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:text="@string/no1"
-            android:textColor="@drawable/text_color" />
+            android:textSize="18sp" />
     </RadioGroup>
 
     <RadioGroup
         android:id="@+id/rdgrp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="4dp"
+
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPergunta2">
 
         <RadioButton
             android:id="@+id/btnYes2"
-            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
             android:button="@android:color/transparent"
-            android:background="@drawable/radio_selector"
-            android:textColor="@drawable/text_color"
-            android:elevation="4dp"
             android:checked="true"
-            android:text="@string/yes2" />
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/yes2"
+            android:textColor="@color/black" />
 
         <RadioButton
             android:id="@+id/btnNo2"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
+            android:textSize="18sp"
             android:layout_height="wrap_content"
-            android:background="@drawable/radio_selector"
             android:button="@android:color/transparent"
             android:elevation="4dp"
             android:padding="16dp"
-            android:text="@string/no2"
-            android:textColor="@drawable/text_color" />
+            android:text="@string/no2"/>
     </RadioGroup>
 
     <RadioGroup
@@ -115,8 +115,6 @@
             android:id="@+id/btnYes3"
             android:layout_width="match_parent"
             android:button="@android:color/transparent"
-            android:background="@drawable/radio_selector"
-            android:textColor="@drawable/text_color"
             android:elevation="4dp"
             android:padding="16dp"
             android:layout_height="wrap_content"
@@ -128,8 +126,6 @@
             android:padding="16dp"
             android:layout_width="match_parent"
             android:button="@android:color/transparent"
-            android:background="@drawable/radio_selector"
-            android:textColor="@drawable/text_color"
             android:elevation="4dp"
             android:layout_height="wrap_content"
             android:text="@string/no3" />
@@ -153,21 +149,26 @@
         android:id="@+id/txtPergunta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="68dp"
         android:text="@string/Pergunta1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloTeste" />
 
     <TextView
         android:id="@+id/txtPergunta2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_width="165dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="648dp"
         android:text="@string/Pergunta2"
+        android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgrp1" />
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/txtPergunta3"
@@ -175,6 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:text="@string/Pergunta3"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,14 +184,31 @@
 
     <TextView
         android:id="@+id/txtTituloTeste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="234dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/poppins"
         android:text="@string/TituloTeste"
+        android:textAlignment="center"
+        android:textColor="#4C4949"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="152dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dementador" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
