@@ -20,6 +20,7 @@
             android:id="@+id/btnYes1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/yes1" />
 
         <RadioButton
@@ -42,6 +43,7 @@
             android:id="@+id/btnYes2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/yes2" />
 
         <RadioButton
@@ -64,6 +66,7 @@
             android:id="@+id/btnYes3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/yes3" />
 
         <RadioButton
