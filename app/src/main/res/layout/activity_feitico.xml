@@ -4,4 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Feitico"/>
+    tools:context=".Feitico">
+
+    <ImageButton
+        android:layout_width="101dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/botao"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="228dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

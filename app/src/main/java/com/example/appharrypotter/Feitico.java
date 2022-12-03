@@ -33,6 +33,10 @@ public class Feitico extends AppCompatActivity implements SensorEventListener {
 
         if(direção < -7){
             // aqui coloca o que fazer quando ativar sensor
+
+            //teste só pra ver se ta funcionando
+            Intent intent = new Intent(this, Quiz.class);
+            startActivity(intent);
         }
         else{
         }
