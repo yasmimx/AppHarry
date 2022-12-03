@@ -20,7 +20,7 @@ import java.net.URLEncoder;
 
 public class Home extends AppCompatActivity {
 
-    ImageButton btnTeste, btnWallpaper;
+    ImageButton btnTeste, btnWallpaper, btnFeitico;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,6 +34,7 @@ public class Home extends AppCompatActivity {
 
         btnTeste = findViewById(R.id.btnTeste);
         btnWallpaper = findViewById(R.id.btnWallpaper1);
+        btnFeitico = findViewById(R.id.btnFeitico);
     }
 
     public void openTeste(View view) {
@@ -45,6 +46,11 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openFeitico(View view) {
+        Intent intent = new Intent(this, Feitico.class);
+        startActivity(intent);
+    }
+
     public void Trailer (View view) {
         Uri uri = Uri.parse("https://youtu.be/5_4SW8HHfUs");
         Intent trailer = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/5_4SW8HHfUs"));
@@ -53,7 +59,7 @@ public class Home extends AppCompatActivity {
 
     public void Pesquisa (View view){
         Intent pesquisa = new Intent(Intent.ACTION_WEB_SEARCH);
-        String query = "Elenco de The Umbrella Academy";
+        String query = "Elenco de Harry Potter";
         pesquisa.putExtra(SearchManager.QUERY, query);
         startActivity(pesquisa);
     }

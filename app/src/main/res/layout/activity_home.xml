@@ -88,7 +88,7 @@
         android:layout_width="64dp"
         android:layout_height="65dp"
         android:background="@color/transparente"
-        android:onClick="openWallpaper"
+        android:onClick="openFeitico"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
