@@ -25,10 +25,10 @@ public class Wallpaper extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnvoltar = (ImageButton) findViewById(R.id.btnvoltar);
-        btnFeitico = findViewById(R.id.btnFeitico);
+        btnvoltar = (ImageButton) findViewById(R.id.btnvoltar2);
+        btnFeitico = findViewById(R.id.btnFeitico2);
         btnHome = findViewById(R.id.btnhome);
-        btnTeste = findViewById(R.id.btnTeste);
+        btnTeste = findViewById(R.id.btnTeste2);
 
         final WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
 

@@ -1,8 +1,5 @@
 package com.example.appharrypotter;
 
-import static com.example.appharrypotter.R.id.btnWallpaper1;
-import static com.example.appharrypotter.R.id.btnWallpaper1;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -20,7 +17,7 @@ import java.net.URLEncoder;
 
 public class Home extends AppCompatActivity {
 
-    ImageButton btnTeste, btnWallpaper, btnFeitico;
+    ImageButton btnTeste, btnWallpaper, btnFeitico, btnMain;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,9 +29,11 @@ public class Home extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btnTeste = findViewById(R.id.btnTeste);
+        btnTeste = findViewById(R.id.btnTeste2);
         btnWallpaper = findViewById(R.id.btnWallpaper1);
-        btnFeitico = findViewById(R.id.btnFeitico);
+        btnFeitico = findViewById(R.id.btnFeitico2);
+        btnMain = findViewById(R.id.btnMain2);
+
     }
 
     public void openTeste(View view) {
@@ -51,9 +50,14 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
     public void Trailer (View view) {
-        Uri uri = Uri.parse("https://youtu.be/5_4SW8HHfUs");
-        Intent trailer = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/5_4SW8HHfUs"));
+        Uri uri = Uri.parse("https://youtu.be/9fIObnIGMlI");
+        Intent trailer = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/9fIObnIGMlI"));
         startActivity(trailer);
     }
 

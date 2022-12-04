@@ -2,24 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/TELA"
+    style="@style/TEXTO"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="584dp"
-        android:layout_height="829dp"
-        android:layout_marginTop="-940dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
-        app:srcCompat="@drawable/barracorvi" />
 
     <TextView
         android:id="@+id/textView1"
@@ -52,7 +39,7 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/btnTeste"
+        android:id="@+id/btnTeste2"
         android:layout_width="65dp"
         android:layout_height="67dp"
         android:background="@color/transparente"
@@ -67,10 +54,11 @@
         app:srcCompat="@drawable/patrono" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnMain2"
         android:layout_width="82dp"
         android:layout_height="80dp"
         android:background="@null"
+        android:onClick="openMain"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +85,7 @@
         app:srcCompat="@drawable/celular" />
 
     <ImageButton
-        android:id="@+id/btnFeitico"
+        android:id="@+id/btnFeitico2"
         android:layout_width="64dp"
         android:layout_height="65dp"
         android:background="@color/transparente"
@@ -116,7 +104,7 @@
         android:id="@+id/imageView9"
         android:layout_width="152dp"
         android:layout_height="162dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMain2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -345,6 +333,7 @@
     </HorizontalScrollView>
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="460dp"
         android:layout_height="393dp"
         android:background="@color/transparente"
@@ -491,5 +480,16 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:id="@+id/idDivider"
+        style="@style/TELA"
+        android:layout_width="475dp"
+        android:layout_height="61dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

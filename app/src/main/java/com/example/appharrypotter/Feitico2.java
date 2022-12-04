@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-public class Feitico extends AppCompatActivity implements SensorEventListener {
+public class Feitico2 extends AppCompatActivity implements SensorEventListener {
 
     SensorManager sensorManager;
     Sensor sensor;
@@ -22,7 +22,7 @@ public class Feitico extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feitico);
+        setContentView(R.layout.activity_feitico2);
 
         btnvoltar = (ImageButton) findViewById(R.id.btnvoltar2);
         btnFeitico = findViewById(R.id.btnFeitico2);
@@ -68,5 +68,4 @@ public class Feitico extends AppCompatActivity implements SensorEventListener {
         Intent intent = new Intent(this, TelaFeiticos.class);
         startActivity(intent);
     }
-
 }

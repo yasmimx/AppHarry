@@ -8,23 +8,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TelaFeiticos extends AppCompatActivity {
+public class TelaFeiticos2 extends AppCompatActivity {
 
     Button btnlumos;
     ImageButton btnvoltar, btnFeitico, btnTeste;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_feiticos);
+        setContentView(R.layout.activity_tela_feiticos2);
 
 
         btnlumos = (Button) findViewById(R.id.btnlumos2);
         btnvoltar = (ImageButton) findViewById(R.id.btnvoltar2);
         btnFeitico = findViewById(R.id.btnFeitico2);
         btnTeste = findViewById(R.id.btnTeste2);
-
-
     }
 
     public void Lumos(View view) {
@@ -46,5 +45,4 @@ public class TelaFeiticos extends AppCompatActivity {
         Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);
     }
-
 }

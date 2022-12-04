@@ -17,16 +17,18 @@
 
     <!-- Light Mode / corvinal e sonserina -->
     <!-- Tela se o Light Mode estiver ligado -->
+
+
     <style name="TELA">
-        <item name="android:background">#FFFFFF</item>
+        <item name="android:backgroundTint">#224c64</item>
     </style>
     <style name="TELA2">
-        <item name="android:background">#98FB98</item>
+        <item name="android:backgroundTint">#106f4b</item>
     </style>
 
     <!-- Textos se o Light Mode estiver ligado -->
     <style name="TEXTO">
-        <item name="android:textColor">#000</item>
+        <item name="android:background">#FFF</item>
     </style>
 
     <!--Botões se o Light Mode estiver ligado -->

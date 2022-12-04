@@ -1,5 +1,7 @@
 package com.example.appharrypotter;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
@@ -13,6 +15,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +29,7 @@ import com.google.android.gms.location.LocationServices;
 
 public class MainActivity extends AppCompatActivity {
 
+    public final static String EXTRA_MESSAGE = ".MESSAGE";
     FusedLocationProviderClient fusedLocationClient;
 
     ImageButton btn1;
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.grifibtn);
         btn3 = findViewById(R.id.sonsebtn);
         btn4 = findViewById(R.id.lufabtn);
+
 
         sharedPreferences = getSharedPreferences("MODE", Context.MODE_PRIVATE );
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
@@ -87,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
-
     }
 
     public void openGrifinoria(View view) {
@@ -101,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     public void openSonserina(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         editor = sharedPreferences.edit();
-
+        
         Intent intent = new Intent(this, Home2.class);
         startActivity(intent);
     }
@@ -109,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
     public void openLufa(View view) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         editor = sharedPreferences.edit();
+
 
         Intent intent = new Intent(this, Home2.class);
         startActivity(intent);
