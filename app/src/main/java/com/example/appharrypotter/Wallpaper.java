@@ -24,7 +24,7 @@ public class Wallpaper extends AppCompatActivity {
 
         final WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
 
-        bSetWallpaper = findViewById(R.id.set_wallpaper_button);
+        bSetWallpaper = findViewById(R.id.btnWall1);
         bSetWallpaper.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceType")
             @Override
