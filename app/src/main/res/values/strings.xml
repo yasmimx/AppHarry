@@ -29,6 +29,17 @@
     <string name="yt">VEJA OS TRAILERS</string>
     <string name="elenco">CONHEÇA O ELENCO</string>
     <string name="contato">ENTRE EM CONTATO</string>
+    <string name="feitico">FEITIÇOS</string>
+    <string name="avada">AVADA KEDAVRA</string>
+    <string name="trevas">Arte das Trevas</string>
+    <string name="mata">Mata os Oponentes</string>
+    <string name="alo">ALOHOMORA ABELHARUS</string>
+    <string name="normal">Normal</string>
+    <string name="abre">Abre Portas não trancadas por mágia</string>
+    <string name="lumos">LUMOS MAXIMA</string>
+    <string name="ponta">Ascende a ponta da varinha</string>
+    <string name="ex">EXPELLIARMUS</string>
+    <string name="desarma">Desarma o oponente</string>
 
 
     <!-- Activity / Teste patrono -->

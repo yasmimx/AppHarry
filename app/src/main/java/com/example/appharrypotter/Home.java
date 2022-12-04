@@ -47,7 +47,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void openFeitico(View view) {
-        Intent intent = new Intent(this, Feitico.class);
+        Intent intent = new Intent(this, TelaFeiticos.class);
         startActivity(intent);
     }
 

@@ -6,10 +6,211 @@
     android:layout_height="match_parent"
     tools:context=".Feitico">
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="160dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lumos"
+        android:textColor="#353030"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="61dp"
+        android:layout_height="59dp"
+        android:background="@color/transparente"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/voltar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="872dp"
+        android:layout_height="497dp"
+        android:background="@color/transparente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.54"
+        app:srcCompat="@drawable/barra"
+        tools:ignore="MissingConstraints" />
+
     <ImageButton
         android:layout_width="101dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="228dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        app:srcCompat="@drawable/botao" />
+
+    <ImageButton
+        android:id="@+id/btnTeste"
+        android:layout_width="65dp"
+        android:layout_height="67dp"
+        android:background="@color/transparente"
+        android:onClick="openTeste"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/patrono" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/chapeusombra"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnWallpaper1"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:background="@color/transparente"
+        android:onClick="openWallpaper"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/celular" />
+
+    <ImageButton
+        android:id="@+id/btnFeitico"
+        android:layout_width="64dp"
+        android:layout_height="65dp"
+        android:background="@color/transparente"
+        android:onClick="openFeitico"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/varinha" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="520dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="165dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6B1E1E1E"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/yt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/minerva"
+                        android:textColor="#FFFF"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="120dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.436"
+                        tools:ignore="MissingConstraints" />
+
+                    <View
+                        android:id="@+id/view15"
+                        android:layout_width="50dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="@drawable/painel"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.436"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

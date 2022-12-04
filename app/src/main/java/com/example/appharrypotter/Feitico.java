@@ -9,6 +9,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 
 public class Feitico extends AppCompatActivity implements SensorEventListener {
 
@@ -45,7 +46,6 @@ public class Feitico extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
-        //ignora aq
 
     }
 
