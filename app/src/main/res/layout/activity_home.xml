@@ -8,6 +8,19 @@
     tools:context=".Home">
 
 
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="584dp"
+        android:layout_height="829dp"
+        android:layout_marginTop="-940dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/barracorvi" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -18,10 +31,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081"
+        app:layout_constraintVertical_bias="0.112"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -98,18 +111,18 @@
         app:layout_constraintVertical_bias="0.972"
         app:srcCompat="@drawable/varinha" />
 
+
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="172dp"
-        android:layout_height="178dp"
+        android:layout_width="152dp"
+        android:layout_height="162dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012"
+        app:layout_constraintVertical_bias="0.065"
         app:srcCompat="@drawable/hp" />
-
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -118,10 +131,10 @@
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198">
+        app:layout_constraintVertical_bias="0.21">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,12 +221,11 @@
                     android:orientation="vertical">
 
 
-
                     <ImageView
                         android:layout_width="180dp"
                         android:layout_height="343dp"
-                        android:layout_marginTop="-70dp"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-70dp"
                         android:src="@drawable/harry" />
 
                     <TextView
@@ -242,12 +254,11 @@
                     android:orientation="vertical">
 
 
-
                     <ImageView
                         android:layout_width="180dp"
                         android:layout_height="343dp"
-                        android:layout_marginTop="-38dp"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-38dp"
                         android:src="@drawable/sirius" />
 
                     <TextView
@@ -276,12 +287,11 @@
                     android:orientation="vertical">
 
 
-
                     <ImageView
                         android:layout_width="185dp"
                         android:layout_height="343dp"
-                        android:layout_marginTop="-55dp"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-55dp"
                         android:src="@drawable/fredegeorg" />
 
                     <TextView
@@ -310,12 +320,11 @@
                     android:orientation="vertical">
 
 
-
                     <ImageView
                         android:layout_width="185dp"
                         android:layout_height="343dp"
-                        android:layout_marginTop="-50dp"
                         android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-50dp"
                         android:src="@drawable/minerva" />
 
                     <TextView
@@ -336,16 +345,16 @@
     </HorizontalScrollView>
 
     <ScrollView
-        android:layout_width="470dp"
-        android:layout_height="440dp"
+        android:layout_width="460dp"
+        android:layout_height="393dp"
         android:background="@color/transparente"
         android:fillViewport="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821"
+        app:layout_constraintVertical_bias="0.757"
         tools:ignore="MissingConstraints">
 
         <LinearLayout

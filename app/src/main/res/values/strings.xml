@@ -40,7 +40,20 @@
     <string name="ponta">Ascende a ponta da varinha</string>
     <string name="ex">EXPELLIARMUS</string>
     <string name="desarma">Desarma o oponente</string>
+    <string name="pers">Personagens que Utilizam esta Habilidade</string>
+    <string name="habili">ATIVAR HABILIDADE</string>
 
+    <string name="luzoquee">Lumos Máxima é uma das variações do feitiço lumos. Quando uma pessoa usa esse feitiço a ponta da varinha ascende, mas com uma luz que pega uma área maior e mais forte do que o lumos normal. Para você apagar a luz da ponta de sua varinha basta dizer Nox.</string>
+    <string name="criado">Criado por:</string>
+    <string name="Violeta">Violeta Stilch</string>
+
+    <string name="escolha">DEFINA UM WALLPAPER</string>
+    <string name="king">KINGSLEY</string>
+    <string name="dum">DUMBLEDORE</string>
+    <string name="ernie">ERNIE MECMILLAN</string>
+    <string name="cho">CHO CHANG</string>
+    <string name="patrono">Patrono de Alguns Personagens</string>
+    <string name="simas">SIMAS FINNIGAN</string>
 
     <!-- Activity / Teste patrono -->
     <string name="no1">Extrovertida</string>
@@ -53,7 +66,7 @@
     <string name="chNavegador" />
     <string name="TituloTeste">Descubra seu Patrono</string>
     <string name="Pergunta1">Você é uma pessoa:</string>
-    <string name="Pergunta2">Qual matéria você estudaria em Hogwarts?</string>
+    <string name="Pergunta2">Escolha uma matéria:</string>
     <string name="Pergunta3">Qual seu animal preferido?</string>
 
     <!-- Activity / Wallpaper -->

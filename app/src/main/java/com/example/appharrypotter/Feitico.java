@@ -10,16 +10,25 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class Feitico extends AppCompatActivity implements SensorEventListener {
 
     SensorManager sensorManager;
     Sensor sensor;
+    ImageButton btnvoltar, btnFeitico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feitico);
+
+        btnvoltar = (ImageButton) findViewById(R.id.btnvoltar);
+        btnFeitico = findViewById(R.id.btnFeitico);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -49,5 +58,15 @@ public class Feitico extends AppCompatActivity implements SensorEventListener {
 
     }
 
+
+    public void Voltar(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    public void openFeitico(View view) {
+        Intent intent = new Intent(this, TelaFeiticos.class);
+        startActivity(intent);
+    }
 
 }

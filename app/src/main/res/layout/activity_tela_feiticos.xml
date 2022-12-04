@@ -7,6 +7,20 @@
     tools:context=".TelaFeiticos">
 
     <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="584dp"
+        android:layout_height="829dp"
+        android:layout_marginTop="-940dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/barracorvi" />
+
+
+    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="872dp"
         android:layout_height="497dp"
@@ -26,10 +40,10 @@
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.987"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.066"
         app:srcCompat="@drawable/hp" />
 
     <ImageButton
@@ -93,17 +107,18 @@
         app:srcCompat="@drawable/varinha" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnvoltar"
+        android:onClick="Voltar"
         android:layout_width="61dp"
         android:layout_height="59dp"
         android:background="@color/transparente"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051"
+        app:layout_constraintVertical_bias="0.099"
         app:srcCompat="@drawable/voltar"
         tools:ignore="MissingConstraints" />
 
@@ -117,9 +132,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071"
+        app:layout_constraintVertical_bias="0.109"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout

@@ -4,16 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.WallpaperManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.io.IOException;
 
 public class Wallpaper extends AppCompatActivity {
 
     Button bSetWallpaper, bSetWallpaper2, bSetWallpaper3;
+    ImageButton btnvoltar, btnFeitico, btnHome, btnTeste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,11 @@ public class Wallpaper extends AppCompatActivity {
         setContentView(R.layout.activity_wallpaper);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        btnvoltar = (ImageButton) findViewById(R.id.btnvoltar);
+        btnFeitico = findViewById(R.id.btnFeitico);
+        btnHome = findViewById(R.id.btnhome);
+        btnTeste = findViewById(R.id.btnTeste);
 
         final WallpaperManager wallpaperManager = WallpaperManager.getInstance(getApplicationContext());
 
@@ -62,5 +70,26 @@ public class Wallpaper extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    public void Voltar(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    public void openFeitico(View view) {
+        Intent intent = new Intent(this, TelaFeiticos.class);
+        startActivity(intent);
+    }
+
+    public void Home(View view) {
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
+    public void openTeste(View view) {
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
     }
 }

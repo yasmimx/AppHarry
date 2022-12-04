@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class Home2 extends AppCompatActivity {
 
-    ImageButton btnTeste, btnWallpaper;
+    ImageButton btnTeste, btnWallpaper1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class Home2 extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btnTeste = findViewById(R.id.btnTeste);
-        btnWallpaper = findViewById(R.id.btnWallpp);
+        btnWallpaper1 = findViewById(R.id.btnWallpaper1);
     }
     public void openTeste(View view) {
         Intent intent = new Intent(this, Quiz2.class);

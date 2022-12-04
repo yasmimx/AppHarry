@@ -9,206 +9,579 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="537dp"
-        android:layout_height="835dp"
-        android:layout_marginTop="-380dp"
-        android:layout_marginBottom="450dp"
+        android:id="@+id/imageView15"
+        android:layout_width="627dp"
+        android:layout_height="849dp"
+        android:layout_marginTop="-1030dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398"
-        app:srcCompat="@drawable/cimasplashnovo" />
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/barracorvi" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="590dp"
-        android:layout_height="180dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnFind"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013"
-        app:srcCompat="@drawable/painel" />
-
-    <RadioGroup
-        android:id="@+id/rdgrp1"
-        android:layout_width="148dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="28dp"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPergunta1">
-
-        <RadioButton
-            android:id="@+id/btnNo1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@android:color/transparent"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:text="@string/no1" />
-
-        <RadioButton
-            android:id="@+id/btnYes1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:color="@color/black"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:text="@string/yes1"
-            android:textSize="18sp" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/rdgrp2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPergunta2">
-
-        <RadioButton
-            android:id="@+id/btnYes2"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:text="@string/yes2"
-            android:textColor="@color/black" />
-
-        <RadioButton
-            android:id="@+id/btnNo2"
-            android:layout_width="160dp"
-            android:textSize="18sp"
-            android:layout_height="wrap_content"
-            android:button="@android:color/transparent"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:text="@string/no2"/>
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/rdgrp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPergunta3">
-
-        <RadioButton
-            android:id="@+id/btnYes3"
-            android:layout_width="match_parent"
-            android:button="@android:color/transparent"
-            android:elevation="4dp"
-            android:padding="16dp"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/yes3" />
-
-        <RadioButton
-            android:id="@+id/btnNo3"
-            android:padding="16dp"
-            android:layout_width="match_parent"
-            android:button="@android:color/transparent"
-            android:elevation="4dp"
-            android:layout_height="wrap_content"
-            android:text="@string/no3" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnFind"
-        style="@style/BOTAO"
-        android:layout_width="144dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
-        android:onClick="answerQuiz"
-        android:text="@string/btnTeste"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgrp3" />
-
-    <TextView
-        android:id="@+id/txtPergunta1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="@string/Pergunta1"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloTeste" />
-
-    <TextView
-        android:id="@+id/txtPergunta2"
-        android:layout_width="165dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="648dp"
-        android:text="@string/Pergunta2"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/txtPergunta3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="@string/Pergunta3"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgrp2" />
-
-    <TextView
-        android:id="@+id/txtTituloTeste"
-        android:layout_width="234dp"
-        android:layout_height="90dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/TituloTeste"
-        android:textAlignment="center"
-        android:textColor="#4C4949"
-        android:textSize="25sp"
+        android:id="@+id/imageView8"
+        android:layout_width="872dp"
+        android:layout_height="497dp"
+        android:background="@color/transparente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="1.54"
+        app:srcCompat="@drawable/barra"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="152dp"
-        android:layout_height="185dp"
+        android:id="@+id/imageView10"
+        android:layout_width="156dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/hp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="544dp"
+        android:layout_height="277dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/dementador" />
+        app:layout_constraintVertical_bias="0.241">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFAF6F6"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="219dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/transparente"
+                        android:src="@drawable/kingpatrono" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-17dp"
+                        android:text="@string/king"
+                        android:textColor="#3A3838"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFFFFFF"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="480dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-132dp"
+                        android:background="@color/transparente"
+                        android:src="@drawable/ernie" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-132dp"
+                        android:text="@string/ernie"
+                        android:textColor="#3A3838"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFFFFFF"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="343dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-60dp"
+                        android:src="@drawable/dum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-75dp"
+                        android:text="@string/dum"
+                        android:textColor="#3A3838"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFFFFFF"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="343dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-58dp"
+                        android:src="@drawable/cisne" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-80dp"
+                        android:text="@string/cho"
+                        android:textColor="#3A3838"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFFFFFF"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="243dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/fox" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-45dp"
+                        android:text="@string/simas"
+                        android:textColor="#3A3838"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#6BFFFFFF"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="135dp"
+                        android:layout_height="303dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:src="@drawable/fred" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-58dp"
+                        android:text="@string/fre"
+                        android:textColor="#3A3838"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RadioGroup
+        android:id="@+id/rdgrp1"
+        android:layout_width="163dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62">
+
+        <RadioButton
+            android:id="@+id/btnNo1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/no1"
+            android:textAlignment="center"
+            android:textSize="17dp" />
+
+        <RadioButton
+            android:id="@+id/btnYes1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/yes1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdgrp2"
+        android:layout_width="309dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819">
+
+        <RadioButton
+            android:id="@+id/btnYes2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/yes2"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="755dp" />
+
+        <RadioButton
+            android:id="@+id/btnNo2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/no2"
+            android:textSize="17sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="755dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdgrp3"
+        android:layout_width="148dp"
+        android:layout_height="127dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/btnNo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/no3"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="866dp" />
+
+        <RadioButton
+            android:id="@+id/btnYes3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/radio_button_left_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/yes3"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="837dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFind"
+        style="@style/BOTAO"
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:background="@drawable/botao"
+        android:onClick="answerQuiz"
+        android:text="@string/btnTeste"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <TextView
+        android:id="@+id/txtPergunta1"
+        android:layout_width="222dp"
+        android:layout_height="74dp"
+        android:background="@drawable/painel"
+        android:padding="18dp"
+        android:text="@string/Pergunta1"
+        android:textAlignment="center"
+        android:textColor="#2E2D2D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/txtPergunta4"
+        android:layout_width="239dp"
+        android:layout_height="75dp"
+        android:background="@drawable/painel"
+        android:padding="15dp"
+        android:text="@string/Pergunta3"
+        android:textAlignment="center"
+        android:textColor="#2E2D2D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:background="@drawable/painel"
+        android:padding="18dp"
+        android:text="@string/Pergunta2"
+        android:textAlignment="center"
+        android:textColor="#2E2D2D"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+
+    <TextView
+        android:id="@+id/txtTituloTeste"
+        android:layout_width="302dp"
+        android:layout_height="64dp"
+        android:text="@string/TituloTeste"
+        android:textAlignment="center"
+        android:textColor="#4C4949"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/txtTituloTeste2"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:text="@string/patrono"
+        android:textAlignment="center"
+        android:textColor="#4C4949"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <ImageButton
+        android:id="@+id/btnvoltar"
+        android:layout_width="61dp"
+        android:layout_height="59dp"
+        android:background="@color/transparente"
+        android:onClick="Voltar"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/voltar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnTeste"
+        android:layout_width="65dp"
+        android:layout_height="67dp"
+        android:background="@color/transparente"
+        android:onClick="openTeste"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/patrono" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/chapeusombra"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnWallpaper1"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:background="@color/transparente"
+        android:onClick="openWallpaper"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/celular" />
+
+    <ImageButton
+        android:id="@+id/btnFeitico"
+        android:layout_width="64dp"
+        android:layout_height="65dp"
+        android:background="@color/transparente"
+        android:onClick="openFeitico"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/varinha" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
