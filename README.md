@@ -2,7 +2,7 @@
 
 Integrantes: Maria Eduarda Cavalcante e Yasmim Borges Dias. 
 
-Vídeo de funcionamento: 
+Vídeo de funcionamento: https://youtu.be/56mSDu0CB44
 
 Tema: Harry Potter. 
 
