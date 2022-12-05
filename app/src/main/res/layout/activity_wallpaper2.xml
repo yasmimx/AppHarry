@@ -51,6 +51,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
                         android:background="@drawable/botao"
                         android:text="@string/btnWall"
                         app:backgroundTint="@null" />
@@ -87,6 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
                         android:background="@drawable/botao"
                         android:text="@string/btnWall"
                         app:backgroundTint="@null" />
@@ -121,6 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
+                        android:textColor="@color/white"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/botao"
                         android:text="@string/btnWall"
@@ -206,8 +209,8 @@
 
     <ImageButton
         android:id="@+id/btnTeste2"
-        android:layout_width="65dp"
-        android:layout_height="67dp"
+        android:layout_width="67dp"
+        android:layout_height="71dp"
         android:background="@color/transparente"
         android:onClick="openTeste"
         android:scaleType="fitXY"

@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class Cadastro extends AppCompatActivity {
 
     EditText username, password, repassword;
-    Button signup, signin ;
+    Button signup, signin;
     DBhelper DB;
 
 

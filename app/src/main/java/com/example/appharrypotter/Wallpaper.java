@@ -38,7 +38,7 @@ public class Wallpaper extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    wallpaperManager.setResource(R.drawable.sonserinamain);
+                    wallpaperManager.setResource(R.drawable.wall11);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
